@@ -1,3 +1,9 @@
-﻿# Sample Node Application with MongoDB
+﻿## Sample Node Application with MongoDB
 
+
+### Getting Started
+
+##### Prerequisites
+
+##### Installing
 

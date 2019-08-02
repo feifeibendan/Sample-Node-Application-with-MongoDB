@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-var mongoServerUrl = process.env.MONGO_SERVER_URL ? process.env.MONGO_SERVER_URL : 'mongodb://192.168.1.180:27077/myproject';
+var mongoServerUrl = process.env.MONGO_SERVER_URL ? process.env.MONGO_SERVER_URL : 'mongodb://localhost:27017/myproject';
 
 mongoose.connect(mongoServerUrl, { useNewUrlParser: true });
 
