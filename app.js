@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 require('./modules/mongoose');
+require('./modules/migrate');
 var debug = require('debug');
 var express = require('express');
 var path = require('path');
@@ -46,6 +47,7 @@ app.use(function (req, res, next) {
 
 // development error handler
 // will print stacktrace
+console.log(app.get('env'));
 if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
         res.status(err.status || 500);

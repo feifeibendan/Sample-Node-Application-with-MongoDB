@@ -3,7 +3,6 @@
 const mongoose = require('mongoose');
 
 var mongoServerUrl = process.env.MONGO_SERVER_URL ? process.env.MONGO_SERVER_URL : 'mongodb://192.168.1.180:27077/myproject';
-console.log("Mongo URL: " + mongoServerUrl);
 
 mongoose.connect(mongoServerUrl, { useNewUrlParser: true });
 
@@ -17,6 +16,10 @@ mongoose.connection.on('error', function (err) {
 
 mongoose.connection.on('disconnected', function () {
     console.log('Mongoose connection disconnected');
+});
+
+mongoose.connection.on('reconnected', function () {
+    console.log('Mongoose connection reconnected');
 });
 
 process.on('SIGINT', function () {

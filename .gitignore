@@ -5,6 +5,9 @@
 [Bb]in/
 [Oo]bj/
 
+# Migration config
+database.json
+
 # Logs
 logs
 *.log
