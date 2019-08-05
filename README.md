@@ -1,4 +1,4 @@
-﻿## Sample No/de Application with MongoDB
+﻿## Sample Node.js Application with MongoDB
 This is a sample project about how to connect Node.js with MongoDB using mongoose. Fetch and store data as well as running migration.
 
 
