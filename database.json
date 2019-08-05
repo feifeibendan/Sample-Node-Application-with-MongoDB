@@ -1,0 +1,23 @@
+﻿{
+  "defaultEnv":  {"ENV":  "NODE_ENV"},
+  "dev": {
+    "driver": "mongodb",
+    "database": { "ENV": "MONGO_DATABASE_NAME" },
+    "host": { "ENV": "MONGO_DATABASE_HOST" },
+    "port": { "ENV": "MONGO_DATABASE_PORT" }
+  },
+
+  "test": {
+    "driver": "mongodb",
+    "database": { "ENV": "MONGO_DATABASE_NAME" },
+    "host": { "ENV": "MONGO_DATABASE_HOST" },
+    "port": { "ENV": "MONGO_DATABASE_PORT" }
+  },
+
+  "prod": {
+    "driver": "mongodb",
+    "database": { "ENV": "MONGO_DATABASE_NAME" },
+    "host": { "ENV": "MONGO_DATABASE_HOST" },
+    "port": { "ENV": "MONGO_DATABASE_PORT" }
+  }
+}
