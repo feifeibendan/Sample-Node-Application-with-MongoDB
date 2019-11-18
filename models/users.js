@@ -14,4 +14,4 @@ var usersSchema = new mongoose.Schema({
     adminUser: { type: Boolean, default: false }
 });
 
-module.exports = mongoose.model('users', usersSchema);
+module.exports = usersSchema;
